@@ -41,5 +41,10 @@ public class Jsonconvertor extends Entityextract {
 	public static void main(String[] args) throws IOException {
 		Jsonconvertor js = new Jsonconvertor();
 		js.Jsonconvertor();
+		BufferedWriter bf = new BufferedWriter(new FileWriter("/home/serendio/jaroutput-json.txt"));
+		bf.write(js.Jsonconvertor());
+		bf.newLine();
+		bf.flush();
+		bf.close();
 	}
 }
